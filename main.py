@@ -31,10 +31,10 @@ logger = logging.getLogger("jeunesse-africaine-api")
 # (image 1254x1254 px fournie par l'ONG-AIL4C)
 # ----------------------------------------------------------------------------
 POSTER_PATH = "poster_template.png"
-FRAME_X, FRAME_Y, FRAME_W, FRAME_H = 669, 108, 529, 813
-# Le cadre imprimé a des coins très arrondis (mesurés sur l'affiche : ~90-115px de rayon).
+FRAME_X, FRAME_Y, FRAME_W, FRAME_H = 683, 89, 507, 824
+# Le cadre imprimé a des coins très arrondis (mesurés sur l'affiche corrigée : ~95-120px de rayon).
 FRAME_INSET = 10
-FRAME_RADIUS = 88
+FRAME_RADIUS = 95
 FACE_VERTICAL_BIAS = 0.10  # laisse un peu plus d'espace sous le visage pour le buste
 SUBJECT_ZOOM = 1.08        # léger zoom pour un cadrage plus serré et flatteur
 
@@ -212,4 +212,5 @@ async def compose(photo: UploadFile = File(...)):
         headers={
             "Content-Disposition": 'inline; filename="jeunesse-africaine-en-action.png"'
         },
-    )
+  )
+         
