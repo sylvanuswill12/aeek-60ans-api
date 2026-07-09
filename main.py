@@ -212,5 +212,4 @@ async def compose(photo: UploadFile = File(...)):
         headers={
             "Content-Disposition": 'inline; filename="jeunesse-africaine-en-action.png"'
         },
-  )
-         
+    )
